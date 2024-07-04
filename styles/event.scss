@@ -1,0 +1,81 @@
+
+.event{
+    padding: 80px 0;
+
+    
+    &--trailer{
+        background-image: linear-gradient(rgb(255, 255, 255), rgb(95, 30, 179));
+    }
+    &--emocoes {
+        background-image: linear-gradient(rgb(175, 130, 232), rgb(181, 134, 219));
+    }
+
+    &--divertida-mente {
+        background-image: linear-gradient(rgb(181, 134, 219), pink);
+    }
+
+    &--elenco {
+        background-image: linear-gradient(pink,yellow);
+    }
+
+    &--estreia {
+        background-image: linear-gradient(yellow, pink);
+    }
+
+    h2{
+        font-size: 20px;
+        text-align: center;
+        margin-top: 20px;
+        color:rgb(48, 5, 128) ;
+    }
+
+    video{
+        margin-left: 25%;
+        margin-top: 5%;
+        width: 55%;
+    }
+    &--image-left {
+        .container {
+            flex-direction: row-reverse;
+
+        }
+
+    }
+  
+    .container{
+        display: flex;
+        margin-top:67px;
+    
+    }
+  
+    &__image {
+        max-width: 360px;
+    }
+
+    &__details {
+        &__title {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 16px;
+        }
+
+        &__description {
+            line-height: 22px;
+        }
+    }
+}
+@media (max-width: 640px) {
+    .event{
+    .container {
+        display: block;
+    }
+
+    &__image {
+        width: 100%;
+    }
+
+    &__details {
+        margin-right: 0;
+        margin-bottom: 16px;
+    }
+}}
